@@ -1,0 +1,25 @@
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+#delete-form {
+    display: inline;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(https://stmed.net/sites/default/files/steve-jobs-wallpapers-27384-7137791.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}

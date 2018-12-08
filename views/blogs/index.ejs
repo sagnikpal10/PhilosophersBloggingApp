@@ -1,0 +1,29 @@
+<% include ../partials/header %> 
+
+<br><br>
+    <header class="jumbotron">
+         <div class="container">
+             <h1>Welcome To Philosophers Blogging Site !!</h1>
+             <p>View the ideas presented by brightest minds</p>
+         </div>
+    </header>
+<br><br>   
+<div class="container">
+     <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% blogs.forEach(function(blog){ %>
+            <div class="col-md-6 card" >
+                <div class="thumbnail">
+                   <img src="<%= blog.image %>">
+                   <div class="caption">
+                       <h4><%= blog.name %></h4>
+                   </div>
+                   <p>
+                        <a href="/blogs/<%= blog._id %>"><button class="btn btn-outline-primary " type="submit">View Blog</button></a>
+                   </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<% include ../partials/footer %>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PhilBlogs</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+    </head>
+    <body>
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <img src="http://www.rocketcases.com/img/rocketcases-logo-white.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Home
+                </a>
+                <a class="navbar-brand" href="/blogs/new">Add New Blog</a>
+            </div>
+            <% if(!currentUser){ %>
+                <div class=" my-2 my-sm-0">
+                    <a href="/login"><button class="btn btn-outline-primary " type="submit">Login</button></a>
+                    <a href="/register"><button class="btn btn-outline-primary " type="submit">Sign Up</button></a>
+                </div>
+            <% } else { %>
+                <div class=" my-2 my-sm-0">
+                    <a class="navbar-brand" href="/">Welcome <%= currentUser.username %></a>
+                    <a href="/logout"><button class="btn btn-outline-primary " type="submit">Logout</button></a>
+                </div>
+            <% } %>
+        </div>
+    </nav>

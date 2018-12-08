@@ -1,0 +1,21 @@
+<% include ./partials/header %> 
+<br><br>
+<div class="container card" style="width: 50%; margin: 25px auto;">
+        <h1>Sign Up to PhilBlogs</h1>
+        <br>
+        <form action="/register" method="POST">
+            <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username"  class="form-control" id="username" placeholder="username">
+            </div>
+            <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="password">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-outline-primary btn-block">Sign Up!</button>
+            </div>
+        </form>
+    </div>
+
+<% include ./partials/footer %> 
