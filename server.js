@@ -39,7 +39,6 @@ app.use("/", indexRoutes)
 app.use("/blogs", blogRoutes)
 app.use("/blogs/:id/comments", commentRoutes)
 
-
 app.listen(3000, ()=>{
    console.log("The web Server Has Started running on http://localhost:3000/")
 })
